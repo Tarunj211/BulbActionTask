@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulbAction</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 1fr;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img height="500px" width="400px" id="bulb" src="../images/offbulb.jpeg" alt="">
+        <div class="">
+            <button type="button" onclick="On()">ON</button>
+            <button type="button" onclick="Off()">OFF</button>
+            <button type="button" onclick="Hide()">HIDE</button>
+            <button type="button" onclick="Show()">SHOW</button>
+        </div>
+    </div>
+
+    <script>
+        function On() {
+            document.getElementById("bulb").src = "../images/onbulb.png"
+        }
+        function Off() {
+            document.getElementById("bulb").src = "../images/offbulb.jpeg"
+        }
+        function Hide() {
+            document.getElementById("bulb").style.display = "none"
+        }
+        function Show() {
+            document.getElementById("bulb").style.display = "block"
+        }
+    </script>
+</body>
+
+</html>
